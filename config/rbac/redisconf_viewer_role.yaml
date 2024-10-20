@@ -1,0 +1,23 @@
+# permissions for end users to view redisconfs.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: redis-k8s-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: redisconf-viewer-role
+rules:
+- apiGroups:
+  - api.redis.sjhr.ir
+  resources:
+  - redisconfs
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - api.redis.sjhr.ir
+  resources:
+  - redisconfs/status
+  verbs:
+  - get

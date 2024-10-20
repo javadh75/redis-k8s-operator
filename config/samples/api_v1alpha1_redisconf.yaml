@@ -1,0 +1,6 @@
+apiVersion: api.redis.sjhr.ir/v1alpha1
+kind: RedisConf
+metadata:
+  name: redisconf-sample
+spec:
+  imageTag: "latest"
