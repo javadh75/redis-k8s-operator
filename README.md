@@ -1,8 +1,12 @@
 # redis-k8s-operator
-// TODO(user): Add simple overview of use/purpose
+A simple Redis operator
 
 ## Description
-// TODO(user): An in-depth paragraph about your project and overview of use
+An operator that simplifies creating Redis pods.
+
+WIP:
+Add persistence
+Add replication support
 
 ## Getting Started
 
